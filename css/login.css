@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Franklin Gothic Book", sans-serif;
+}
+form
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+input
+{
+    margin: 10px 0;
+    padding: 10px;
+    border: transparent;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: bold;
+}
+button
+{
+    padding: 20px;
+    background: aquamarine;
+    cursor: pointer;
+    border: transparent;
+    margin: 15px 0;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+a
+{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.msg
+{
+    font-weight: bold;
+    border: 2px solid orange;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    /*display: none;*/
+}
+fieldset>legend
+{
+    font-weight: 700;
+    padding:0 10px 3px 10px;
+    font-size: 20px;
+    color: green;
+    background-color: #fff;
+    border: 2px solid aquamarine;
+    border-radius: 30px ;
+
+
+}
+fieldset
+{
+
+    width: 480px;
+    border: 2px solid aquamarine;
+    border-radius: 30px ;
+    background-color: white;
+}
+

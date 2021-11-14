@@ -1,0 +1,117 @@
+.header {
+    margin-bottom: 83px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    align-items: center;
+}
+.header-img
+{
+    width: 160px;
+    height: 160px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.site-name
+{
+    margin-left: -110px;
+    font-family: 'century gothic' ;
+}
+.header__input {
+    background: #eeeeee;
+    border-radius: 33px;
+    width: 366px;
+    height: 64px;
+    padding: 15px 52px;
+    font-size: 24px;
+    line-height: 33px;
+}
+.header__input::placeholder{
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #BABABA;
+    
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+
+}
+.menu__item {
+    padding-right: 36px;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.about {
+}
+
+.about__inner {
+    display: flex;
+    justify-content: center;
+}
+.about__img {
+    margin-right: 60px;
+    height: 100%;
+}
+.about__content {
+}
+.about__title {
+    max-width: 485px;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 53px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.about__autor {
+    font-size: 16px;
+    line-height: 22px;
+    color: #D0434B;
+    margin-bottom: 50px;
+}
+.about__about {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.about__text {
+    max-width: 665px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.about__info {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.about__description {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+.about__description span{
+    font-weight: normal;
+    
+}
