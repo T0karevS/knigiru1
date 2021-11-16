@@ -19,7 +19,7 @@ require_once 'connect/connect.php';
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">
+                <a href="index.php" class="logo">
                     <img src="images/Vector.svg" alt="" class="header-img">
                 
                 </a>          
@@ -50,6 +50,7 @@ require_once 'connect/connect.php';
         <div class="container">
             <div class="slider__title">Оформите подписку и забудьте про покупку книг
             <button class="podpiska"> Первый месяц бесплатно!</button></div>
+            <ul>
             <?php
                 
                 if(isset($_POST['submit']))
@@ -65,94 +66,9 @@ require_once 'connect/connect.php';
                     }
                     $sql = " SELECT * FROM `knigi` WHERE ".implode(" ", $array);
                     $query = mysqli_query($connect, $sql);
-                    while($row = mysqli_fetch_assoc($query))  echo "<h1>".$row['title']."</h1><p>".$row['author']."</p><br>";
+                    while($row = mysqli_fetch_assoc($query))  echo '<li><p class="title">'.$row['title'].'</p><p class="author">"'.$row['author'].'"</p><a href="'.$row['link'].'"> <img src="'.$row['image'].'" ></a></li>';                   
                 }
-            
-                ?>
-            <!-- <div class="slick__inner">
-                <div class="slick-wrapper">
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/1.jpg" alt="" class="slider__box-img">
-                            </a>
-                            <div class="slider__box-title">Граф Монте-Кристо</div>
-                            <div class="slider__box-autor">Александр Дюма</div>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/2.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Отцы и дети</div>
-                                <div class="slider__box-autor">Иван Тургенев</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/3.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Мертвые души</div>
-                                <div class="slider__box-autor">Николай Гоголь</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/4.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Война и мир</div>
-                                <div class="slider__box-autor">Лев Толстой</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/5.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Алиса в Стране чудес.</div>
-                                <div class="slider__box-autor">Льюис Кэрролл</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/6.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Евгений Онегин</div>
-                                <div class="slider__box-autor"> Александр Пушкин</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/7.jpg" alt="" class="slider__box-img">
-                            </a>
-                            <div class="slider__box-title">Герой нашего времени</div>
-                            <div class="slider__box-autor">Михаил Лермонтов</div>
-                        </div>
-                    </div>
-                    <div class="slick-slide">
-                        <div class="slider__box">
-                            <a href="about.html" class="slider__box-link">
-                                <img src="images/8.jpg" alt="" class="slider__box-img">
-                                <div class="slider__box-title">Обломов</div>
-                                <div class="slider__box-autor">Иван Гончаров</div>
-                            </a>
-                        </div>
-                    </div>
-                </div> 
-             </div> -->
-        </div>
-        </div>
-    </section>
-
-    <!-- <script src="js/swiper-bundle.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+                ?> 
+                </ul>
 
 </html>
