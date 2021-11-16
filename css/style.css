@@ -19,8 +19,6 @@ body
 {
     font-family: century gothic;
 }
-.header {
-}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -41,7 +39,7 @@ body
 }
 .site-name
 {
-    margin-left: -80px;
+    margin-left: -40px;
     font-size: 28px;
     font-family: century gothic;
 }
@@ -144,15 +142,9 @@ body
     min-height: 330px;
     padding: 0 40px;
 }
-.slick-slide {
-   
-}
 .slider__box {
     max-width: 157px;
     padding-top: 8px;
-}
-.slider__box-link {
-    
 }
 .slider__box-img {
     width: 180px;
@@ -171,4 +163,24 @@ body
     color: #D0434B;
     cursor: pointer;
 }
-
+.title, .author
+{
+    font-size: 25px;
+    line-height: 34px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 280px;
+    margin: 0px;
+    padding: 0px;
+}
+ul
+{
+  display:flex;  
+  list-style:none;
+  align-items: center;
+  justify-content: center;
+  
+}
+li{
+    margin: auto;
+}
